@@ -1,8 +1,8 @@
 Package: pkgmaker
 Type: Package
 Title: Development Utilities for R Packages
-Version: 0.31.1
-Date: 2020-03-18
+Version: 0.32.2
+Date: 2020-10-20
 Authors@R: person("Renaud", "Gaujoux", email = "renozao@protonmail.com", role = c("aut", "cre"))
 Description: Provides some low-level utilities to use for package
     development. It currently provides managers for multiple package specific
@@ -13,8 +13,8 @@ Description: Provides some low-level utilities to use for package
     It is still under heavy development and changes in the interface(s) are
     more than likely to happen.
 License: GPL (>=2)
-URL: https://renozao.github.io/pkgmaker
-BugReports: http://github.com/renozao/pkgmaker/issues
+URL: https://renozao.github.io/pkgmaker/
+BugReports: https://github.com/renozao/pkgmaker/issues
 LazyLoad: yes
 Encoding: UTF-8
 Depends:
@@ -29,12 +29,9 @@ Imports:
     graphics,
     codetools,
     digest,
-    stringi,
-    magrittr,
     stringr,
     xtable,
     withr,
-    bibtex (>= 0.4),
     assertthat
 Suggests:
     devtools (>= 0.8),
@@ -43,9 +40,11 @@ Suggests:
     testthat,
     knitr,
     rmarkdown,
+    markdown,
     yaml,
     Biobase,
-    datasets
+    datasets,
+    rbibutils (>= 1.3)
 Collate: 
     'bibtex.R'
     'colors.R'
@@ -69,5 +68,5 @@ Collate:
     'user.R'
     'vignette.R'
     'with.r'
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)

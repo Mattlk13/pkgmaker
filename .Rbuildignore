@@ -2,6 +2,8 @@ sandbox/
 \.project
 \.settings
 staticdocs
+docs
+_pkgdown.yml
 ^dev$
 vignettes/Rpackages\.bib
 vignettes/.*\.tex
